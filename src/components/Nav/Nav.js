@@ -41,6 +41,9 @@ const themes = createMuiTheme ({
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    color: theme.palette.common.white,
+    backgroundColor: theme.palette.background.primary,
+  
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -76,10 +79,11 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding:0,
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,

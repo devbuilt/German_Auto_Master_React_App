@@ -7,7 +7,7 @@ class About extends Component {
     }
     render() { 
         return ( 
-            <div>
+            <div className="AppDarkMode">
                 <p>About</p>
             </div>
 
