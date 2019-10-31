@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.Nav_Link:link {
+  text-decoration: none;
+  color:#ff6d00
+}
+
+.Nav_Link:visited {
+  text-decoration: none;
+  color:#ff6d00;
+}
+.AppDarkMode {
+  background-color:#0a0a0a;
+  height: 100%;
+  width:auto;
+
+}
+.AppNormalMode {
+  background-color:#fff ;
+}
