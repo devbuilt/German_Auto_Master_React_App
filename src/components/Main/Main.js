@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tuning from '../Tuning/Tuning';
+import HeaderMain from '../Header/HeaderMain'
 
 
 class Main extends Component {
@@ -10,6 +11,7 @@ class Main extends Component {
     render() { 
         return ( 
             <div className="AppDarkMode">
+            <HeaderMain/>
             <Tuning/>
             </div>
          );

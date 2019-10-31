@@ -37,3 +37,8 @@ code {
   display:inline-block;
   height:40px
 }
+.responsive {
+  width: 100%;
+  height: auto;
+  
+}
