@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tuning from '../Tuning/Tuning';
 
 
 class Main extends Component {
@@ -8,7 +9,9 @@ class Main extends Component {
     }
     render() { 
         return ( 
-            <p>Main Page</p>
+            <div className="AppDarkMode">
+            <Tuning/>
+            </div>
          );
     }
 }
