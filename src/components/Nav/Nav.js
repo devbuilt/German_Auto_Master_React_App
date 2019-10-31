@@ -129,7 +129,7 @@ export default function PersistentDrawerLeft() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="secondary" noWrap>
-            TEST APP
+           GERMAN AUTO MASTERS
           </Typography>
         </Toolbar>
       </AppBar>
