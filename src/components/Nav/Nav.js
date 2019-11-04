@@ -35,6 +35,11 @@ const themes = createMuiTheme ({
           light: orange['A400'],
           dark: orange[900]
             
+        }, 
+        action: {
+          main: orange['A700'],
+          light: orange['A400'],
+          dark: orange[900]
         }
       }
 })
@@ -44,6 +49,15 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.common.white,
     backgroundColor: theme.palette.background.primary,
   
+  },
+  button: {
+    background: 'linear-gradient(-45deg, #ffeb3b 30%,  #dd2c00 60%, #01579b 40%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -125,7 +139,8 @@ export default function PersistentDrawerLeft() {
       >
         <Toolbar>
           <IconButton
-            color="secondary"
+            // color="button"
+            style={{background: 'linear-gradient(-45deg, #ffeb3b 20%,  #dd2c00 70%)'}}
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -136,7 +151,7 @@ export default function PersistentDrawerLeft() {
           {/* <Typography variant="h6" color="secondary" noWrap>
            GERMAN AUTO MASTERS
           </Typography> */}
-          <img className="navlogo" src={ImageNav} alt="navlogo"/>
+          <NavLink to="/"><img className="navlogo" src={ImageNav} alt="navlogo"/></NavLink>
         </Toolbar>
       </AppBar>
       <Drawer
